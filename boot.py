@@ -13,7 +13,7 @@ def wlanConnect():
         if net.ssid == 'ParklifePiFi':
             print('Network found!')
             #credentials of temp Pi wifi: 'ParklifePiFi','lileedev'
-            wlan.connect(net.ssid, auth=(net.sec, 'lileedev'), timeout=5000)
+            wlan.connect(net.ssid, auth=(net.sec, '########'), timeout=5000)
             while not wlan.isconnected():
                 machine.idle() # save power while waiting
             print('WLAN connection succeeded!')
